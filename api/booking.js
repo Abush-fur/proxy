@@ -28,7 +28,7 @@ export default async function handler(req, res) {
     // 3. IMPORTANT: pass checkoutlink back to frontend
     return res.status(200).json({
       checkoutlink: data.checkoutlink || null,
-      raw: data
+      data: data
     });
 
   } catch (error) {
